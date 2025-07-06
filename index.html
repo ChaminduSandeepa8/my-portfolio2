@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chamindu Sandeepa | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Chamindu Sandeepa</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Profile</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="toggle-menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="about-container">
+        <img src="back2.png" alt="Chamindu Sandeepa" class="profile-pic" />
+        <div class="about-text">
+          <h1>Hello, I'm Chamindu Sandeepa</h1>
+          <p>
+            I am an undergraduate student at the University of Sri Jayewardenepura, currently pursuing a degree in Software Engineering. I am passionate about technology
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="work-2.png" alt="Book Store Website" />
+          <h3>Book Store Website</h3>
+          <p>A fully responsive online bookstore built with HTML, CSS, and JavaScript.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="work-1.png" alt="Carrom Team Form" />
+          <h3>Carrom Team Form</h3>
+          <p>A user-friendly form to register carrom team members using HTML and JS validation.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <img src="OIP.png" alt="School Bus Tracking System" />
+          <h3>School Bus Tracking System</h3>
+          <p> A real-time bus tracking system built with firebase to display live bus locations and arrival times.
+</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Profile Info</h2>
+
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="skills-content">Skills</button>
+        <button class="tab-btn" data-tab="experience-content">Experience</button>
+        <button class="tab-btn" data-tab="education-content">Education</button>
+      </div>
+
+      <div class="tab-content active" id="skills-content">
+        <div class="skills-list">
+         <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <LI>JAVA SCRIPT</LI>
+            <li>NETWORKING BESICS</li>
+         </ul>
+        </div>
+      </div>
+
+      <div class="tab-content" id="experience-content">
+        <ul>
+         
+          <li>2023 - Built responsive web apps as a student project</li>
+        </ul>
+      </div>
+
+      <div class="tab-content" id="education-content">
+        <ul>
+          <li>2022 - Completed Computer Networking Course</li>
+          <li>Studying B.com in Software Engineering</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p id="form-response"></p>
+
+      <div class="contact-info" style="margin-top: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
+        <p>📧 Email: <a href="mailto:chamindusandeepa88@gmail.com">Email</a></p>
+        <p>📱 Phone: 077 2817 660</p>
+        <p>🐙 GitHub: <a href="https://github.com/ChaminduSandeepa8" target="_blank">github.com</a></p>
+        <p>📘 Facebook: <a href="https://www.facebook.com/share/15XUnuN4M7/" target="_blank">Facebook</a></p>
+        <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/chamindu-sandeepa-951639344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Linkedin</a></p>
+      </div>
+    </section>
+
+    <section id="download-cv" class="section" style="text-align: center;">
+      <a href="cv1.pdf" download class="btn">⬇️ Download My CV</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Chamindu Sandeepa. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
