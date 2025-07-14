@@ -2,127 +2,427 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <title>Chamindu Sandeepa | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
+
   <header>
     <nav class="navbar">
       <div class="logo">Chamindu Sandeepa</div>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Profile</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+        <li><a href="#skills"><i class="fas fa-cog"></i> Profile</a></li>
+        <li><a href="#activities"><i class="fas fa-running"></i> Activities</a></li>
+        <li><a href="#achievements"><i class="fas fa-trophy"></i> Achievements</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
-      <button id="toggle-menu">&#9776;</button>
+      <button id="toggle-menu">☰</button>
+      <button id="theme-toggle"><i class="fas fa-moon"></i></button>
     </nav>
   </header>
 
   <main>
     <section id="about" class="section">
       <div class="about-container">
-        <img src="back2.png" alt="Chamindu Sandeepa" class="profile-pic" />
+        <div class="profile-pic-wrapper">
+          <img src="back2.png" alt="Chamindu Sandeepa" class="profile-pic" />
+        </div>
         <div class="about-text">
-          <h1>Hello, I'm Chamindu Sandeepa</h1>
-          <p>
-            I am an undergraduate student at the University of Sri Jayewardenepura, currently pursuing a degree in Software Engineering. I am passionate about technology
-          </p>
+  <h1>Hello, I'm <span class="highlight">Chamindu Sandeepa</span></h1>
+  <p>I am an undergraduate student at the University of Sri Jayewardenepura, currently pursuing a degree in Software Engineering. I am passionate about technology and innovation.</p>
+  <div class="action-buttons">
+    <a href="#contact" class="btn">Contact Me</a>
+    <!-- <button id="download-cv" class="btn btn-outline">
+      <i class="fas fa-download"></i> Download CV
+    </button> -->
+    <a href="cv1.pdf" download class="btn btn-outline">
+  <i class="fas fa-download"></i> Download CV
+</a>
+
+  </div>
+  <div class="social-links">
+    <a href="https://github.com/ChaminduSandeepa8" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/chamindu-sandeepa-951639344" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/share/15XUnuN4M7/" target="_blank"><i class="fab fa-facebook"></i></a>
+  </div>
+</div>
         </div>
       </div>
     </section>
 
+    <!-- Other sections (Projects, Skills, etc.) remain the same as your original HTML -->
+    <!-- ... -->
+
+    <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+      <!-- Projects Section -->
     <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="work-2.png" alt="Book Store Website" />
-          <h3>Book Store Website</h3>
-          <p>A fully responsive online bookstore built with HTML, CSS, and JavaScript.</p>
-          <a href="#" class="btn">View Project</a>
+  <div class="section-header">
+    <h2>My Projects</h2>
+    <p>Practical applications of my skills</p>
+  </div>
+  <div class="projects-grid">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Book Store Website" class="project-img">
+      <div class="project-content">
+        <h3>Book Store Website</h3>
+        <p>A fully responsive online bookstore with shopping cart functionality and admin dashboard.</p>
+        <div class="project-tech">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Firebase</span>
         </div>
-        <div class="project-card">
-          <img src="work-1.png" alt="Carrom Team Form" />
-          <h3>Carrom Team Form</h3>
-          <p>A user-friendly form to register carrom team members using HTML and JS validation.</p>
-          <a href="#" class="btn">View Project</a>
-        </div>
-        <div class="project-card">
-          <img src="OIP.png" alt="School Bus Tracking System" />
-          <h3>School Bus Tracking System</h3>
-          <p> A real-time bus tracking system built with firebase to display live bus locations and arrival times.
-</p>
-          <a href="#" class="btn">View Project</a>
+        <div class="project-links">
+          <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="#" target="_blank"><i class="fab fa-github"></i> Source Code</a>
         </div>
       </div>
-    </section>
+    </div>
+    
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Carrom Team Form" class="project-img">
+      <div class="project-content">
+        <h3>Carrom Team Form</h3>
+        <p>A dynamic form with validation to register carrom team members and track tournament participation.</p>
+        <div class="project-tech">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Form Validation</span>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="#" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="School Bus Tracking System" class="project-img">
+      <div class="project-content">
+        <h3>School Bus Tracking System</h3>
+        <p>Real-time tracking system displaying bus locations and estimated arrival times for parents and school administrators.</p>
+        <div class="project-tech">
+          <span>Firebase</span>
+          <span>Google Maps API</span>
+          <span>JavaScript</span>
+          <span>Real-time DB</span>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <a href="#" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+    <!-- Skills Section -->
     <section id="skills" class="section">
-      <h2>Profile Info</h2>
-
-      <div class="tab-buttons">
-        <button class="tab-btn active" data-tab="skills-content">Skills</button>
-        <button class="tab-btn" data-tab="experience-content">Experience</button>
-        <button class="tab-btn" data-tab="education-content">Education</button>
+      <div class="section-header">
+        <h2>My Skills</h2>
+        <p>Technologies I work with</p>
       </div>
-
-      <div class="tab-content active" id="skills-content">
-        <div class="skills-list">
-         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <LI>JAVA SCRIPT</LI>
-            <li>NETWORKING BESICS</li>
-         </ul>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Frontend</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HTML5</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>CSS3</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>React</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3><i class="fas fa-server"></i> Backend</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Node.js</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Express</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>MongoDB</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Git</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>VS Code</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Figma</span>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="tab-content" id="experience-content">
-        <ul>
-         
-          <li>2023 - Built responsive web apps as a student project</li>
-        </ul>
+
+    <section id="education" class="section">
+  <div class="section-header">
+    <h2>Education</h2>
+    <p>My academic journey</p>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-date">2023 - Present</div>
+      <div class="timeline-content">
+        <h3>BSc in Software Engineering</h3>
+        <p>University of Sri Jayewardenepura</p>
+        <p>Current GPA: 3.2/4.0</p>
       </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">2021</div>
+      <div class="timeline-content">
+        <h3>GCE Advanced Level</h3>
+        <p>Physical Science Stream</p>
+        <p>Grades: A (Physics), B (Chemistry), B (Combined Maths)</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">2018</div>
+      <div class="timeline-content">
+        <h3>GCE Ordinary Level</h3>
+        <p>8A's and 1B</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div class="tab-content" id="education-content">
-        <ul>
-          <li>2022 - Completed Computer Networking Course</li>
-          <li>Studying B.com in Software Engineering</li>
-        </ul>
+    <!-- Activities Section -->
+    <section id="activities" class="section">
+      <div class="section-header">
+        <h2>My Activities</h2>
+        <p>Beyond coding</p>
+      </div>
+      <div class="activities-container">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2023 - Present</div>
+            <div class="timeline-content">
+              <h3>Personal Project – Portfolio Website</h3>
+              <p>Designed and developed a fully responsive one-page portfolio website using HTML5, CSS3, and JavaScript. Integrated downloadable CV, responsive layout, and animated transitions.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+              <h3>Open Source Contributor</h3>
+              <p>Contributed to several open source projects on GitHub, fixing bugs and adding features.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2021</div>
+            <div class="timeline-content">
+              <h3>Coding Mentor</h3>
+              <p>Volunteered as a coding mentor for high school students learning web development.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+      <div class="section-header">
+        <h2>My Achievements</h2>
+        <p>Milestones I'm proud of</p>
+      </div>
+      <div class="achievements-container">
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3>Hackathon Winner</h3>
+          <p>Won 5th place in University Hackathon 2023 for developing an innovative education app.</p>
+        </div>
+        
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>Qualified for University – Physical Science Stream</h3>
+          <p>Secured 1 A and 2 B grades in the G.C.E. A/L examination (Physical Science stream), earning admission to the Software Engineering degree program at the University of Sri Jayewardenepura.</p>
+        </div>
+        
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-medal"></i>
+          </div>
+          <h3>Leadership Role in Group Projects </h3>
+          <p>Led a team of students to complete a group project on [Project Topic], organizing tasks, managing GitHub workflow, and presenting the final product.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="section">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <input type="text" id="name" placeholder="Your Name" required />
-        <input type="email" id="email" placeholder="Your Email" required />
-        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-      <p id="form-response"></p>
-
-      <div class="contact-info" style="margin-top: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
-        <p>📧 Email: <a href="mailto:chamindusandeepa88@gmail.com">Email</a></p>
-        <p>📱 Phone: 077 2817 660</p>
-        <p>🐙 GitHub: <a href="https://github.com/ChaminduSandeepa8" target="_blank">github.com</a></p>
-        <p>📘 Facebook: <a href="https://www.facebook.com/share/15XUnuN4M7/" target="_blank">Facebook</a></p>
-        <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/chamindu-sandeepa-951639344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Linkedin</a></p>
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>Let's work together</p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email</h3>
+              <p>chamindusandeepa88@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h3>Phone</h3>
+              <p>+94 77 281 7660</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Location</h3>
+              <p>Galle , Sri Lanka</p>
+            </div>
+          </div>
+        </div>
+        
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+          <div id="form-response"></div>
+        </form>
       </div>
     </section>
-
-    <section id="download-cv" class="section" style="text-align: center;">
-      <a href="cv1.pdf" download class="btn">⬇️ Download My CV</a>
-    </section>
+  
+  
   </main>
 
-  <footer>
-    <p>&copy; 2025 Chamindu Sandeepa. All rights reserved.</p>
-  </footer>
+
+  <footer class="portfolio-footer">
+  <div class="footer-content">
+    <h2>Chamindu Sandeepa</h2>
+    <p class="subtitle">Software Engineering Student & Developer</p>
+    
+    <div class="footer-links">
+      <a href="#about">About Me</a>
+      <a href="#education">Education & Skills</a>
+      <a href="#activities">Extra-Curricular</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    
+    <div class="footer-social">
+      <a href="https://github.com/ChaminduSandeepa8" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/chamindu-sandeepa-951639344" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/share/15XUnuN4M7/" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+    
+    <p class="copyright">© 2025 Chamindu Sandeepa. All rights reserved.</p>
+  </div>
+</footer>
+
 
   <script src="script.js"></script>
+
+
+
 </body>
 </html>
