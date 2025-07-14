@@ -220,7 +220,7 @@ body {
   font-size: 1.1rem;
 }
 
-/* Projects Grid */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -290,7 +290,7 @@ body {
   color: var(--secondary);
 }
 
-/* Skills Section */
+
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -343,7 +343,7 @@ body {
   transition: width 1.5s ease;
 }
 
-/* Timeline Styles */
+
 .timeline {
   position: relative;
   max-width: 800px;
@@ -417,7 +417,7 @@ body {
   left: -37px;
 }
 
-/* Achievements Section */
+
 .achievements-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -450,7 +450,7 @@ body {
   font-size: 1.5rem;
 }
 
-/* Contact Section */
+
 .contact-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -512,7 +512,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* Footer */
+
 .portfolio-footer {
   background: var(--card-bg);
   padding: 3rem 2rem;
@@ -580,7 +580,7 @@ body {
   margin-top: 2rem;
 }
 
-/* Back to Top Button */
+
 #back-to-top {
   position: fixed;
   bottom: 30px;
@@ -606,7 +606,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Responsive Design */
+
 @media (max-width: 992px) {
   .about-container {
     flex-direction: column;
@@ -678,7 +678,6 @@ body {
 }
 
 
-/* Add to your existing CSS */
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem 5%;
@@ -721,8 +720,6 @@ body {
 }
 
 
-
-/* Add to your existing CSS */
 @media (max-width: 480px) {
   .about-text h1 {
     font-size: 2rem;
@@ -750,7 +747,6 @@ body {
 }
 
 
-/* Add to your existing CSS */
 @media (max-width: 768px) {
   .about-container {
     padding: 6rem 5% 3rem;
@@ -785,7 +781,7 @@ body {
   }
 }
 
-/* Add to your existing CSS */
+
 @media (hover: none) {
   .project-card:hover {
     transform: none;
@@ -803,10 +799,10 @@ body {
   }
 }
 
-/* Larger tap targets for mobile */
+
 @media (max-width: 768px) {
   a, button, .btn {
-    min-height: 44px; /* Recommended minimum touch target size */
+    min-height: 44px; 
     min-width: 44px;
   }
   
@@ -815,7 +811,7 @@ body {
   }
 }
 
-/* Mobile Menu Styles */
+
 @media (max-width: 768px) {
   .nav-links {
     position: fixed;
@@ -856,7 +852,7 @@ body {
     display: flex;
   }
   
-  /* Prevent scrolling when menu is open */
+
   body.no-scroll {
     overflow: hidden;
     position: fixed;

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Mobile Menu Toggle
+
   const toggleMenu = document.getElementById('toggle-menu');
   const navLinks = document.querySelector('.nav-links');
   const body = document.body;
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
       '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
   });
 
-  // Close mobile menu when clicking a link
+  
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
       if (navLinks.classList.contains('active')) {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Theme Toggle
+
   const themeToggle = document.getElementById('theme-toggle');
   const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
   const currentTheme = localStorage.getItem('theme') || 
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Back to Top Button
+  
   const backToTopBtn = document.getElementById('back-to-top');
 
   window.addEventListener('scroll', () => {
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  // Animate elements when they come into view
+  
   const animateOnScroll = () => {
     const elements = document.querySelectorAll('.timeline-item, .skill-progress');
     
@@ -77,11 +77,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   };
 
-  // Initialize animations
   window.addEventListener('scroll', animateOnScroll);
   animateOnScroll();
 
-  // Form Submission
+
   const contactForm = document.getElementById('contact-form');
   const formResponse = document.getElementById('form-response');
 
@@ -91,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
       formResponse.textContent = 'Sending message...';
       formResponse.style.color = 'var(--primary)';
 
-      // Simulate form submission
+    
       setTimeout(() => {
         formResponse.textContent = 'Message sent successfully!';
         formResponse.style.color = 'green';
@@ -100,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Show/hide mobile menu toggle based on screen size
+ 
   function checkScreenSize() {
     if (window.innerWidth <= 768) {
       toggleMenu.style.display = 'block';
@@ -116,5 +115,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   window.addEventListener('resize', checkScreenSize);
-  checkScreenSize(); // Run once on load
+  checkScreenSize(); 
 });
