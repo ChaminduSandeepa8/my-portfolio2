@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<!-- Update your existing viewport meta tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <title>Chamindu Sandeepa | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
@@ -21,7 +22,7 @@
         <li><a href="#achievements"><i class="fas fa-trophy"></i> Achievements</a></li>
         <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
-      <button id="toggle-menu">☰</button>
+      <button id="toggle-menu"><i class="fas fa-bars"></i></button>
       <button id="theme-toggle"><i class="fas fa-moon"></i></button>
     </nav>
   </header>
@@ -33,99 +34,87 @@
           <img src="back2.png" alt="Chamindu Sandeepa" class="profile-pic" />
         </div>
         <div class="about-text">
-  <h1>Hello, I'm <span class="highlight">Chamindu Sandeepa</span></h1>
-  <p>I am an undergraduate student at the University of Sri Jayewardenepura, currently pursuing a degree in Software Engineering. I am passionate about technology and innovation.</p>
-  <div class="action-buttons">
-    <a href="#contact" class="btn">Contact Me</a>
-    <!-- <button id="download-cv" class="btn btn-outline">
-      <i class="fas fa-download"></i> Download CV
-    </button> -->
-    <a href="cv1.pdf" download class="btn btn-outline">
-  <i class="fas fa-download"></i> Download CV
-</a>
-
-  </div>
-  <div class="social-links">
-    <a href="https://github.com/ChaminduSandeepa8" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/chamindu-sandeepa-951639344" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.facebook.com/share/15XUnuN4M7/" target="_blank"><i class="fab fa-facebook"></i></a>
-  </div>
-</div>
+          <h1>Hello, I'm <span class="highlight">Chamindu Sandeepa</span></h1>
+          <p>I am an undergraduate student at the University of Sri Jayewardenepura, currently pursuing a degree in Software Engineering. I am passionate about technology and innovation.</p>
+          <div class="action-buttons">
+            <a href="#contact" class="btn">Contact Me</a>
+            <a href="cv1.pdf" download class="btn btn-outline">
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/ChaminduSandeepa8" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/chamindu-sandeepa-951639344" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/share/15XUnuN4M7/" target="_blank"><i class="fab fa-facebook"></i></a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Other sections (Projects, Skills, etc.) remain the same as your original HTML -->
-    <!-- ... -->
-
     <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-      <!-- Projects Section -->
-    <section id="projects" class="section">
-  <div class="section-header">
-    <h2>My Projects</h2>
-    <p>Practical applications of my skills</p>
-  </div>
-  <div class="projects-grid">
-    <!-- Project 1 -->
-    <div class="project-card">
-      <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Book Store Website" class="project-img">
-      <div class="project-content">
-        <h3>Book Store Website</h3>
-        <p>A fully responsive online bookstore with shopping cart functionality and admin dashboard.</p>
-        <div class="project-tech">
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>JavaScript</span>
-          <span>Firebase</span>
-        </div>
-        <div class="project-links">
-          <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-          <a href="#" target="_blank"><i class="fab fa-github"></i> Source Code</a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Project 2 -->
-    <div class="project-card">
-      <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Carrom Team Form" class="project-img">
-      <div class="project-content">
-        <h3>Carrom Team Form</h3>
-        <p>A dynamic form with validation to register carrom team members and track tournament participation.</p>
-        <div class="project-tech">
-          <span>HTML5</span>
-          <span>CSS3</span>
-          <span>JavaScript</span>
-          <span>Form Validation</span>
-        </div>
-        <div class="project-links">
-          <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-          <a href="#" target="_blank"><i class="fab fa-github"></i> Source Code</a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Project 3 -->
-    <div class="project-card">
-      <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="School Bus Tracking System" class="project-img">
-      <div class="project-content">
-        <h3>School Bus Tracking System</h3>
-        <p>Real-time tracking system displaying bus locations and estimated arrival times for parents and school administrators.</p>
-        <div class="project-tech">
-          <span>Firebase</span>
-          <span>Google Maps API</span>
-          <span>JavaScript</span>
-          <span>Real-time DB</span>
-        </div>
-        <div class="project-links">
-          <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-          <a href="#" target="_blank"><i class="fab fa-github"></i> Source Code</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-    <!-- Skills Section -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2>My Projects</h2>
+        <p>Practical applications of my skills</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Book Store Website" class="project-img">
+          <div class="project-content">
+            <h3>Book Store Website</h3>
+            <p>A fully responsive online bookstore with shopping cart functionality and admin dashboard.</p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Carrom Team Form" class="project-img">
+          <div class="project-content">
+            <h3>Carrom Team Form</h3>
+            <p>A dynamic form with validation to register carrom team members and track tournament participation.</p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Form Validation</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="School Bus Tracking System" class="project-img">
+          <div class="project-content">
+            <h3>School Bus Tracking System</h3>
+            <p>Real-time tracking system displaying bus locations and estimated arrival times for parents and school administrators.</p>
+            <div class="project-tech">
+              <span>Firebase</span>
+              <span>Google Maps API</span>
+              <span>JavaScript</span>
+              <span>Real-time DB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="skills" class="section">
       <div class="section-header">
         <h2>My Skills</h2>
@@ -242,40 +231,38 @@
       </div>
     </section>
 
-
     <section id="education" class="section">
-  <div class="section-header">
-    <h2>Education</h2>
-    <p>My academic journey</p>
-  </div>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-date">2023 - Present</div>
-      <div class="timeline-content">
-        <h3>BSc in Software Engineering</h3>
-        <p>University of Sri Jayewardenepura</p>
-        <p>Current GPA: 3.2/4.0</p>
+      <div class="section-header">
+        <h2>Education</h2>
+        <p>My academic journey</p>
       </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-date">2021</div>
-      <div class="timeline-content">
-        <h3>GCE Advanced Level</h3>
-        <p>Physical Science Stream</p>
-        <p>Grades: A (Physics), B (Chemistry), B (Combined Maths)</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2023 - Present</div>
+          <div class="timeline-content">
+            <h3>BSc in Software Engineering</h3>
+            <p>University of Sri Jayewardenepura</p>
+            <p>Current GPA: 3.2/4.0</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2021</div>
+          <div class="timeline-content">
+            <h3>GCE Advanced Level</h3>
+            <p>Physical Science Stream</p>
+            <p>Grades: A (Physics), B (Chemistry), B (Combined Maths)</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2018</div>
+          <div class="timeline-content">
+            <h3>GCE Ordinary Level</h3>
+            <p>8A's and 1B</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-date">2018</div>
-      <div class="timeline-content">
-        <h3>GCE Ordinary Level</h3>
-        <p>8A's and 1B</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-    <!-- Activities Section -->
     <section id="activities" class="section">
       <div class="section-header">
         <h2>My Activities</h2>
@@ -308,7 +295,6 @@
       </div>
     </section>
 
-    <!-- Achievements Section -->
     <section id="achievements" class="section">
       <div class="section-header">
         <h2>My Achievements</h2>
@@ -335,13 +321,12 @@
           <div class="achievement-icon">
             <i class="fas fa-medal"></i>
           </div>
-          <h3>Leadership Role in Group Projects </h3>
+          <h3>Leadership Role in Group Projects</h3>
           <p>Led a team of students to complete a group project on [Project Topic], organizing tasks, managing GitHub workflow, and presenting the final product.</p>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section">
       <div class="section-header">
         <h2>Get In Touch</h2>
@@ -367,7 +352,7 @@
             <i class="fas fa-map-marker-alt"></i>
             <div>
               <h3>Location</h3>
-              <p>Galle , Sri Lanka</p>
+              <p>Galle, Sri Lanka</p>
             </div>
           </div>
         </div>
@@ -390,39 +375,32 @@
         </form>
       </div>
     </section>
-  
-  
   </main>
 
-
   <footer class="portfolio-footer">
-  <div class="footer-content">
-    <h2>Chamindu Sandeepa</h2>
-    <p class="subtitle">Software Engineering Student & Developer</p>
-    
-    <div class="footer-links">
-      <a href="#about">About Me</a>
-      <a href="#education">Education & Skills</a>
-      <a href="#activities">Extra-Curricular</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <div class="footer-content">
+      <h2>Chamindu Sandeepa</h2>
+      <p class="subtitle">Software Engineering Student & Developer</p>
+      
+      <div class="footer-links">
+        <a href="#about">About Me</a>
+        <a href="#education">Education & Skills</a>
+        <a href="#activities">Extra-Curricular</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      
+      <div class="footer-social">
+        <a href="https://github.com/ChaminduSandeepa8" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/chamindu-sandeepa-951639344" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/share/15XUnuN4M7/" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+      
+      <p class="copyright">© 2025 Chamindu Sandeepa. All rights reserved.</p>
     </div>
-    
-    <div class="footer-social">
-      <a href="https://github.com/ChaminduSandeepa8" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/chamindu-sandeepa-951639344" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/share/15XUnuN4M7/" target="_blank"><i class="fab fa-facebook"></i></a>
-    </div>
-    
-    <p class="copyright">© 2025 Chamindu Sandeepa. All rights reserved.</p>
-  </div>
-</footer>
-
+  </footer>
 
   <script src="script.js"></script>
-
-
-
 </body>
 </html>
